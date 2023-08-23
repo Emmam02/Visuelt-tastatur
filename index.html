@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <h1>Skriv noe med det visuelle "tastaturet"!</h1>
+    <div id="backgroundDiv">
+        <p id="pushedLetters"></p>
+
+    </div>
+    <table>
+        <!--Første linje av tastaturet-->
+        <tr>
+            <td onclick="letterClicked(this.InnerHTML)">1</td>
+            <td onclick="letterClicked(this)">2</td>
+            <td onclick="letterClicked(this)">3</td>
+            <td onclick="letterClicked(this)">4</td>
+            <td onclick="letterClicked(this)">5</td>
+            <td onclick="letterClicked(this)">6</td>
+            <td onclick="letterClicked(this)">7</td>
+            <td onclick="letterClicked(this)">8</td>
+            <td onclick="letterClicked(this)">!</td>
+            <td onclick="letterClicked(this)">?</td>
+            <td onclick="backClick()">←</td>
+        </tr>
+        <!-- Andre linje av tastaturet-->
+        <tr>
+            <td onclick="letterClicked(this)">Q</td>
+            <td onclick="letterClicked(this)">W</td>
+            <td onclick="letterClicked(this)">E</td>
+            <td onclick="letterClicked(this)">R</td>
+            <td onclick="letterClicked(this)">T</td>
+            <td onclick="letterClicked(this)">Y</td>
+            <td onclick="letterClicked(this)">U</td>
+            <td onclick="letterClicked(this)">I</td>
+            <td onclick="letterClicked(this)">O</td>
+            <td onclick="letterClicked(this)">P</td>
+            <td onclick="letterClicked(this)">Å</td>
+        </tr>
+        <!--Tredje linje av tastaturet-->
+        <tr>
+            <td onclick="letterClicked(this)">A</td>
+            <td onclick="letterClicked(this)">S</td>
+            <td onclick="letterClicked(this)">D</td>
+            <td onclick="letterClicked(this)">F</td>
+            <td onclick="letterClicked(this)">G</td>
+            <td onclick="letterClicked(this)">H</td>
+            <td onclick="letterClicked(this)">J</td>
+            <td onclick="letterClicked(this)">K</td>
+            <td onclick="letterClicked(this)">L</td>
+            <td onclick="letterClicked(this)">Ø</td>
+            <td onclick="letterClicked(this)">Æ</td>
+        </tr>
+        <!--Fjerde linje av tastaturet-->
+        <tr>
+            <td onclick="letterClicked(this)">Z</td>
+            <td onclick="letterClicked(this)">X</td>
+            <td onclick="letterClicked(this)">C</td>
+            <td onclick="letterClicked(this)">V</td>
+            <td onclick="letterClicked(this)">B</td>
+            <td onclick="letterClicked(this)">N</td>
+            <td onclick="letterClicked(this)">M</td>
+            <td onclick="letterClicked(this)">.</td>
+            <td onclick="letterClicked(this)">,</td>
+            <td onclick="letterClicked(this)">-</td>
+            <td onclick="deleteLetters()">del</td>
+        </tr>
+    </table>
+    <!--Denne er satt utenfor table fordi jeg ikke fikk endret
+    størrelsen på bare denne knappen når den lå inni table.
+    når jeg la den i en egen div under så fikk jeg endret den til 
+    den størrelsen jeg ønsket å ha-->
+    <div id="spaceClick" onclick="spaceBar(this)">━</div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+* {
+    font-family: 'Gill Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#pushedLetters {
+    display: inline-block;
+    text-align: left;
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+#backgroundDiv {
+    min-height: 300px;
+    min-width: 700px;
+    background-image: url("img.png/backG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+table {
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+
+}
+
+td {
+    background-color: black;
+    color: rgb(93, 255, 29);
+    border: 2px solid rgb(93, 255, 29);
+    text-align: center;
+    font-weight: bolder;
+    width: 600px;
+    height: 50px;
+}
+
+#spaceClick {
+    font-size: xx-large;
+    background-color: black;
+    color: rgb(93, 255, 29);
+    border: 2px solid rgb(93, 255, 29);
+    text-align: center;
+    font-weight: bolder;
+    width: 600px;
+    height: 50px;
+}
+
+
